@@ -1,0 +1,265 @@
+/*Font */
+@font-face {
+	font-family: Sailec;
+	src: url(../fonts/Sailec/Type-Dynamic-Sailec.otf);
+}
+/*Common*/
+a:hover{ text-decoration: none;}
+button:focus,.slick-slide:focus{outline: none;}
+body {
+    font-family: Sailec; font-size: 14px;color: #151442;
+}
+.bg-dark-custom{background-color: #102421;}
+.custom-btn {
+    padding: 17px 0px;
+    min-width: 160px;
+    border-radius: 48px;
+    text-align: center;
+    font-weight: 400;
+    border: 1px solid transparent;
+    transition: all .5s;
+}
+.btn-green {
+    background-color: #C7E1BF;
+    color: #102522;
+}
+.btn-black:hover {
+    color: #fff;
+    background-color: #102421;
+}
+.btn-green:hover {
+    color: #C7E1BF;
+    background: #102522;
+    border-color: #c7e1bf;
+}
+/****************
+    header
+***************/   
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+header.scrolled{
+    background: #102412;
+    background: -moz-linear-gradient(left, #102412 52%, #102412 50%, #ffffff 50%);
+    background: -webkit-linear-gradient(left, #102412 52%,#102412 50%,#ffffff 50%);
+    background: linear-gradient(to right, #102412 52%,#102412 50%,#ffffff 50%);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #151442;
+    font-size: 14px;
+    font-weight: 500;
+}
+.user-icon img {
+    height: 20px;
+}
+.cart-count {
+	height: 19px;
+	width: 19px;
+	background-color: #151442;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 300;
+	left: -26px;
+	bottom: 0;
+}
+/****************
+    Banner
+***************/ 
+.banner-info {
+    padding: 200px 100px;
+}
+.banner-info span {
+    color: #D2D2D2;
+    letter-spacing: .5em;
+    font-size: 14px;
+}
+.banner-info  h1 {
+    font-size: 88px;
+    font-weight: bold;
+}
+.banner-info p {
+    font-size: 22px;
+    color: #d2d2d2;
+}
+.banner-img{
+    margin-left: -100px;
+}
+/****************
+    Products
+***************/
+.title-style h2 {
+    font-size: 80px;
+    font-weight: 500;
+}
+.products {
+    padding: 70px 0;
+}
+.btn-black {
+    border-color: #102421;
+    color: #102421;
+}
+.btn-black img {margin-left: 10px;}
+.title-style .btn-black {
+    margin-top: -80px;
+}
+.product-title {
+    font-size: 36px;
+    color: #151442;
+}
+.product-price {
+    color: #8F9095;
+    display: inline-block;
+    padding: 15px 0;
+}
+.product-info {
+    color: #8F9095;
+    font-size: 16px;
+}
+.product-item {
+    padding: 15px;
+    cursor: pointer;
+}
+.product-hover {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 12px;
+    padding-top: 20px;
+    top: 16%;
+    right: 0%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all .5s;
+}
+.product-item:hover .product-hover{
+    opacity: 1;
+    transform: none;
+}
+/****************
+    Clients
+***************/
+.testimonials{
+    background: url(../images/client-bg.png) no-repeat top center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 100px 0;
+}
+.review-box {
+    background-color: #FFF3F3;
+    padding: 60px;
+}
+.testimonials .review:before,.testimonials .review:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 44px;
+    height: 34px;
+    z-index: 1;
+    background-size: 100% 100%;
+}
+.testimonials .review:before {
+    background: url(../images/Quote-s.png);
+    top: -29px;
+    left: -30px;
+}
+.testimonials .review:after{
+    background: url(../images/Quote-e.png);
+    right: 0;
+    bottom: 15px;
+}
+.testimonials .review {
+    font-size: 40px;
+    color: #342B42;
+}
+.client-name {
+    font-size: 20px;
+    color: #454545;
+}
+.client-job {
+    color: #454545;
+}
+.testimonials h3 {
+    font-size: 70px;
+}
+/****************
+    vitamin
+***************/
+.vitamin-item {
+    padding: 15px;
+}
+.vitamin-item .product-title {
+    padding: 20px 0 0;
+}
+.vitamins {
+    padding: 100px 0;
+}
+/****************
+    Benefits
+***************/
+.benefit-box p {
+    font-size: 18px;
+}
+.benefit-box img {
+    margin-bottom: 50px;
+}
+.benefits {
+    padding: 50px 0;
+}
+/****************
+    Footer
+***************/
+footer {
+    padding: 100px 0;
+    background: #0F2421;
+}
+.footer-menu > li >a {color: #fff;}
+.footer-menu > li {
+    margin-bottom: 20px;
+}
+.footer-address {
+    line-height: 29px;
+}
+footer h2 {
+    font-size: 88px;
+}
+.scroll-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 100;
+    cursor: pointer;
+}
+/*Media Queries*/
+@media (max-width:1200px){
+    .banner-info h1,.title-style h2,.testimonials h3,footer h2{font-size: 40px}
+    .banner-info {padding: 90px 50px}
+    .banner-img {margin-left: -30px;}
+    img.product-img {width: 100%;}
+}
+
+@media (max-width:767px){
+    .banner-img {margin-left: 0;}
+    .custom-btn {
+        font-size: 12px;
+        min-width: 100px;
+        padding: 10px 0;
+    }
+    .title-style .btn-black {margin-top: 0;}
+    .review-box {padding: 30px;}
+    .menu-right {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 13px;
+        margin: auto;
+        width: 100px;
+    }
+    .testimonials .review{font-size: 25px;}
+    .navbar-collapse {background: #fff;}
+}
